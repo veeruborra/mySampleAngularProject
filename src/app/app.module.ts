@@ -7,9 +7,10 @@ import { HttpClientModule,HTTP_INTERCEPTORS } from '@angular/common/http';
 import { JwtInterceptor, ErrorInterceptor, fakeBackendProvider } from './_helpers';
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
+import { AlertComponent } from './alert/alert.component';
 @NgModule({
   declarations: [
-    AppComponent,LoginComponent,HomeComponent
+    AppComponent,LoginComponent,HomeComponent, AlertComponent
   ],
   imports: [
     BrowserModule,
