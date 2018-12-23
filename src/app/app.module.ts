@@ -8,15 +8,19 @@ import { JwtInterceptor, ErrorInterceptor, fakeBackendProvider } from './_helper
 import { LoginComponent } from './login/login.component';
 import { HomeComponent } from './home/home.component';
 import { AlertComponent } from './alert/alert.component';
+import { TrailComponent } from './main/trail/trail.component';
+import { Trail1Component } from './main/trail1/trail1.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 @NgModule({
   declarations: [
-    AppComponent,LoginComponent,HomeComponent, AlertComponent
+    AppComponent,LoginComponent,HomeComponent, AlertComponent, TrailComponent, Trail1Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    BrowserAnimationsModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
