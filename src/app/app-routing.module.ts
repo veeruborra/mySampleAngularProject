@@ -9,11 +9,12 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    canActivate: [AuthGuard]
+    canActivate: [AuthGuard],
+    data: {animation: 'FilterPage'}
 },
 {
     path: 'login',
-    component: LoginComponent
+    component: LoginComponent,
 },
 {
   path: 'trail',
